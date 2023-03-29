@@ -17,7 +17,7 @@ public class Ahorro extends Cuenta implements Interes {
     }
 
     if (numRetiros >= 3) {
-      monto += monto * 0.01; // Se agrega un 1% al monto a retirar
+      monto += monto * 0.01;
     }
 
     if (saldo < monto) {
@@ -35,7 +35,7 @@ public class Ahorro extends Cuenta implements Interes {
     }
 
     if (primerDeposito) {
-      saldo += calcularInteres(monto); // Se agrega el interés correspondiente
+      saldo += calcularInteres(monto);
       primerDeposito = false;
     } else {
       saldo += monto;
@@ -44,7 +44,7 @@ public class Ahorro extends Cuenta implements Interes {
 
   @Override
   public double calcularInteres(double monto) {
-    return monto * 1.005; // Se agrega un 0.5% al monto depositado
+    return monto * 1.005;
   }
 }
 

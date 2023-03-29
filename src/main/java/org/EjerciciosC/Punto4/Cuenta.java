@@ -16,6 +16,8 @@ public abstract class Cuenta {
   }
 
   public Cuenta(String numeroCuenta, String propietario) {
+    this.numeroCuenta = numeroCuenta;
+    this.propietario = propietario;
   }
 
   public abstract void depositar(double monto) throws MontoNegativoException;
