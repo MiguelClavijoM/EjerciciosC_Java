@@ -20,6 +20,9 @@ public abstract class Cuenta {
     this.propietario = propietario;
   }
 
+  public Cuenta(String propietario, String numeroCuenta, float saldo, String retiros, String depositos) {
+  }
+
   public abstract void depositar(double monto) throws MontoNegativoException;
 
   public abstract void retirar(double monto) throws MontoNegativoException, SaldoInsuficienteException;
@@ -35,6 +38,10 @@ public abstract class Cuenta {
   public String getPropietario() {
     return propietario;
   }
+
+  public String getTipo(){
+    return null;
+  };
 
   public abstract double calcularInteres(double monto);
 }

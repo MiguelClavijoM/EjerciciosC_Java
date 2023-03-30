@@ -88,7 +88,7 @@ public class Main {
       System.out.println(e.getMessage());
     }
   CuentaBaseDatos basededatos = new CuentaBaseDatos();
-      basededatos.createAccount("12345667870", "ahorros");
+      basededatos.crearCuenta("12345667870", "ahorros", "Miguel");
 
   }
 
